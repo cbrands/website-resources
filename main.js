@@ -15,6 +15,8 @@ const run = () =>
   items.forEach(item => {
     if (isInViewport(item)) {
       item.classList.add('show');
+    } else {
+      item.classList.remove('show');
     }
   });
 
